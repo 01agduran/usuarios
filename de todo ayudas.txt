@@ -1,0 +1,102 @@
+ <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <?php
+                foreach ($menu as $men)
+                {
+                ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><?php echo $men['descripcion']?></a>
+                    </li>
+                <?php
+                }
+                ?>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+
+
+
+            <?php
+                        if($menu['idMenu']==$cat[0]['idMenu'])
+                        {
+                         foreach($cat as $categoria)
+                         {?>
+                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                                 <a class="dropdown-item" href=""><?php echo $categoria['descripcion']?></a>
+
+                             </div>
+                        <?php
+                         }
+                       }
+                        ?>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                            <a class="dropdown-item" href="#">Action</a>
+
+                        </div>
+
+                             <?php $dropdown_menu='class="nav-link dropdown-toggle"'?>
+                <?php $only_menu='class="nav-item dropdown"'?>
+
+
+
+
+         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <?php $dropdown_menu='nav-link dropdown-toggle'?>
+                <?php $only_menu='nav-link'; $sw=false?>
+                <?php for ($i=0;$i<count($menu);$i++){?>
+
+                        <?php for($j=0;$j,count($categoria);$j++){
+                                if($menu[$i]['idMenu']==$categoria[$j]['idMenu'])
+                                {
+                                    
+                                }
+                          }?>
+
+                        <a class="<?php echo $dropdown_menu?>" href=""><?php echo $menu[$i]['descripcion']?></a>
+                    </li>
+                    <?php }?>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+
+
+             <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
