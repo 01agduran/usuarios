@@ -99,9 +99,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <label style="color: white">asdasd</label>
 <!--            </div>-->
              </div>
-
-
-
     </nav>
 
 

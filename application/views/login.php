@@ -16,28 +16,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script src="libs/bootstrap-4.0.0-dist/js/bootstrap.js" type="text/javascript"></script>
     <script src="libs/bootstrap-4.0.0-dist/js/popper.min.js" type="text/javascript"></script>
     <link href="libs/bootstrap-4.0.0-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="libs/own/css/login.css" rel="stylesheet">
     <script src="libs/own/js/util.js" type="text/javascript"></script>
     <style type="text/css">
-        html,body{
-            height: 100%;
-            background-color: #343a40 !important;
-        }
-        body {
-            display: -ms-flexbox;
-            display: -webkit-box;
-            display: flex;
-            -ms-flex-align: center;
-            -ms-flex-pack: center;
-            -webkit-box-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            justify-content: center;
-            padding-top: 40px;
-            padding-bottom: 40px;
-            /*Agregados recientemente*/
-            background-color: #f5f5f5;
-            color: #6c757d !important;
-        }
+
 
     </style>
     <script>
